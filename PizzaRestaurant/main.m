@@ -48,11 +48,11 @@ int main(int argc, const char * argv[])
 
            
             if ([sizeWord containsString:@"small"]) {
-                [restaurantKitchen makePizzaWithSize:PizzaSizeSmall toppings:toppingsArray];
+                Pizza *pizza = [restaurantKitchen makePizzaWithSize:PizzaSizeSmall toppings:toppingsArray];
             } else if ([sizeWord containsString:@"medium"]){
-                [restaurantKitchen makePizzaWithSize:PizzaSizeMedium toppings:toppingsArray];
+                Pizza *pizza = [restaurantKitchen makePizzaWithSize:PizzaSizeMedium toppings:toppingsArray];
             } else if ([sizeWord containsString:@"large"]) {
-                [restaurantKitchen makePizzaWithSize:PizzaSizeLarge toppings:toppingsArray];
+                Pizza *pizza = [restaurantKitchen makePizzaWithSize:PizzaSizeLarge toppings:toppingsArray];
             } else {
                 NSLog(@"Not a valid pizza size!");
             }
