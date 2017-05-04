@@ -10,6 +10,10 @@
 
 #import "Kitchen.h"
 
+//Understand class methods
+//Understand how constructor methods work
+//Prepare them to understand composition of methods into convenience methods
+
 int main(int argc, const char * argv[])
 {
 

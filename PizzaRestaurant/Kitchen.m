@@ -8,11 +8,14 @@
 
 #import "Kitchen.h"
 
+
 @implementation Kitchen
 
-/*- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
+- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
 {
+    Pizza *pizza = [[Pizza alloc]initPizzaWithSize:size andToppings:toppings];
+    return pizza;
     
-}*/
+}
 
 @end
