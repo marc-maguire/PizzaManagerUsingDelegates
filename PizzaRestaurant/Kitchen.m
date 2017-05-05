@@ -34,14 +34,10 @@
             if ([self.delegate respondsToSelector:@selector(kitchenDidMakePizza:)]) {
                 
                 [self.delegate kitchenDidMakePizza:pizza];
-                return pizza;
-                
-                } else {
-                    
-                    return pizza;
-                    
+               
                 }
-        
+         
+            return pizza;
         
         } else if ((shouldMake) && (!shouldUpgrade)) {
             
@@ -51,14 +47,10 @@
             if ([self.delegate respondsToSelector:@selector(kitchenDidMakePizza:)]) {
                 
                 [self.delegate kitchenDidMakePizza:pizza];
-                return pizza;
-                
-            } else {
-                
-                return pizza;
                 
             }
-
+            
+            return pizza;
             
         } else {
             
@@ -78,19 +70,20 @@
 
 - (BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(NSArray *)toppings {
     
+    return [self.delegate kitchen:self shouldMakePizzaOfSize:size andToppings:toppings];
     
-    return YES;
 }
 - (BOOL)kitchenShouldUpgradeOrder:(Kitchen *)kitchen {
     
     
-    return YES;
+    return [self.delegate kitchenShouldUpgradeOrder:self];
+    
 }
 
 
 - (void)kitchenDidMakePizza:(Pizza *)pizza {
     
-    
+    NSLog(@"We made a %ld pizza with %@ toppings",(long)pizza.size, pizza.toppings);
     
 }
 

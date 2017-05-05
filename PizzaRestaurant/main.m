@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 #import "Kitchen.h"
+#import "InputHandler.h"
+#import "Manager.h"
+#import "CheeryManager.h"
 
 
 //Understand class methods
@@ -23,29 +26,22 @@ int main(int argc, const char * argv[])
 //        NSLog(@"Please pick your pizza size and toppings:");
         
         Kitchen *restaurantKitchen = [Kitchen new];
+        Manager *mediumManager = [[Manager alloc]init];
+        CheeryManager *cheeryManager = [[CheeryManager alloc]init];
+       
         
         while (TRUE) {
             // Loop forever
             
-            NSLog(@"Welcome to the Pizza Kitchen!\nTo cook a small, medium or large pizza, enter the size and toppings in the following format:\nsize topping1 topping2 topping3 etc:\n");
-            char str[100];
-            fgets (str, 100, stdin);
-            
-            NSString *inputString = [[NSString alloc] initWithUTF8String:str];
-            inputString = [inputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            
-            NSLog(@"Input was %@", inputString);
-            
-            // Take the first word of the command as the size, and the rest as the toppings
-            NSArray *commandWords = [inputString componentsSeparatedByString:@" "];
-            NSString *sizeWord = commandWords[0];
-            
+            NSArray *inputHandler = [InputHandler initiateUserInteraction];
+            NSString *sizeWord = inputHandler[0];
+            NSArray *toppingsArray = [inputHandler subarrayWithRange:NSMakeRange(1, ([inputHandler count]-1))];
+
             
             //NSMutableArray *toppingsArray = [[NSMutableArray alloc]initWithArray:commandWords];
             //[toppingsArray removeObjectAtIndex:0];
             //updated to do in 1 line
-            NSArray *toppingsArray = [commandWords subarrayWithRange:NSMakeRange(1, ([commandWords count]-1))];
-
+            
            
             if ([sizeWord containsString:@"small"]) {
                 Pizza *pizza = [restaurantKitchen makePizzaWithSize:PizzaSizeSmall toppings:toppingsArray];
