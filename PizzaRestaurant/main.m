@@ -12,6 +12,9 @@
 #import "InputHandler.h"
 #import "Manager.h"
 #import "CheeryManager.h"
+#import "Manager.h"
+#import "DeliveryService.h"
+#import "DeliveryCar.h"
 
 
 //Understand class methods
@@ -26,10 +29,15 @@ int main(int argc, const char * argv[])
 //        NSLog(@"Please pick your pizza size and toppings:");
         
         Kitchen *restaurantKitchen = [Kitchen new];
+        DeliveryService *bestService = [[DeliveryService alloc]init];
+        DeliveryCar *fastestCar = [[DeliveryCar alloc]init];
+        
+        
         Manager *mediumManager = [[Manager alloc]init];
-        CheeryManager *cheeryManager = [[CheeryManager alloc]init];
-        restaurantKitchen.delegate = cheeryManager;
-       
+        //CheeryManager *cheeryManager = [[CheeryManager alloc]init];
+        restaurantKitchen.delegate = mediumManager;
+        mediumManager.delegate = bestService;
+        bestService.delegate = fastestCar;
         
         while (TRUE) {
             // Loop forever

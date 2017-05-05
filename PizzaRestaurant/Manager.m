@@ -28,6 +28,12 @@
     
 }
 
+- (void)deliverPizza:(Pizza *)pizza {
+    
+    [self.delegate deliverPizza:pizza];
+    
+}
+
 //optional
 
 @end

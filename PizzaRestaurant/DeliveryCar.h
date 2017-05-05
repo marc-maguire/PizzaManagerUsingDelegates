@@ -1,5 +1,5 @@
 //
-//  Manager.h
+//  DeliveryCar.h
 //  PizzaRestaurant
 //
 //  Created by Marc Maguire on 2017-05-05.
@@ -7,14 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Kitchen.h"
+#import "Pizza.h"
 #include "DeliveryService.h"
 
-@interface Manager : NSObject <KitchenDelegate>
-
-@property (nonatomic,weak) id <PizzaDeliveryProtocol> delegate;
+@interface DeliveryCar : NSObject <PizzaDeliveryProtocol>
 
 - (void)deliverPizza:(Pizza *)pizza;
-
 
 @end

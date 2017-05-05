@@ -14,6 +14,8 @@
 		92FD60AF1EBD152200817FD0 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FD60AE1EBD152200817FD0 /* Manager.m */; };
 		92FD60B21EBD16D500817FD0 /* CheeryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FD60B11EBD16D500817FD0 /* CheeryManager.m */; };
 		92FD60B51EBD179A00817FD0 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FD60B41EBD179A00817FD0 /* InputHandler.m */; };
+		92FD60CE1EBD3FE800817FD0 /* DeliveryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FD60CD1EBD3FE800817FD0 /* DeliveryService.m */; };
+		92FD60D11EBD3FF900817FD0 /* DeliveryCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FD60D01EBD3FF900817FD0 /* DeliveryCar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,10 @@
 		92FD60B11EBD16D500817FD0 /* CheeryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheeryManager.m; sourceTree = "<group>"; };
 		92FD60B31EBD179A00817FD0 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		92FD60B41EBD179A00817FD0 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		92FD60CC1EBD3FE800817FD0 /* DeliveryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryService.h; sourceTree = "<group>"; };
+		92FD60CD1EBD3FE800817FD0 /* DeliveryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryService.m; sourceTree = "<group>"; };
+		92FD60CF1EBD3FF900817FD0 /* DeliveryCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryCar.h; sourceTree = "<group>"; };
+		92FD60D01EBD3FF900817FD0 /* DeliveryCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryCar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,10 @@
 				92FD60B31EBD179A00817FD0 /* InputHandler.h */,
 				92FD60B41EBD179A00817FD0 /* InputHandler.m */,
 				6001EC83197B4EC300F97011 /* main.m */,
+				92FD60CC1EBD3FE800817FD0 /* DeliveryService.h */,
+				92FD60CD1EBD3FE800817FD0 /* DeliveryService.m */,
+				92FD60CF1EBD3FF900817FD0 /* DeliveryCar.h */,
+				92FD60D01EBD3FF900817FD0 /* DeliveryCar.m */,
 				92358B2D1EBBAC6D00E0EE6D /* Pizza.h */,
 				92358B2E1EBBAC6D00E0EE6D /* Pizza.m */,
 				6001EC8E197B502F00F97011 /* Kitchen.h */,
@@ -162,7 +172,9 @@
 			files = (
 				92FD60B21EBD16D500817FD0 /* CheeryManager.m in Sources */,
 				92FD60B51EBD179A00817FD0 /* InputHandler.m in Sources */,
+				92FD60D11EBD3FF900817FD0 /* DeliveryCar.m in Sources */,
 				92358B2F1EBBAC6D00E0EE6D /* Pizza.m in Sources */,
+				92FD60CE1EBD3FE800817FD0 /* DeliveryService.m in Sources */,
 				6001EC90197B502F00F97011 /* Kitchen.m in Sources */,
 				6001EC84197B4EC300F97011 /* main.m in Sources */,
 				92FD60AF1EBD152200817FD0 /* Manager.m in Sources */,
