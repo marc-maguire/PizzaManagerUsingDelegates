@@ -28,6 +28,7 @@ int main(int argc, const char * argv[])
         Kitchen *restaurantKitchen = [Kitchen new];
         Manager *mediumManager = [[Manager alloc]init];
         CheeryManager *cheeryManager = [[CheeryManager alloc]init];
+        restaurantKitchen.delegate = cheeryManager;
        
         
         while (TRUE) {
