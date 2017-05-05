@@ -34,6 +34,11 @@
     
 }
 
+-(void)kitchenDidMakePizza:(Pizza *)pizza {
+    
+    [self deliverPizza:pizza];
+}
+
 //optional
 
 @end

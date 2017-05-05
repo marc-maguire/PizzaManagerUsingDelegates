@@ -12,7 +12,7 @@
 
 - (void)deliverPizza:(Pizza *)pizza {
     
-    NSLog(@"Pizza Delivered");
+    NSLog(@"Pizza Delivered by Delivery Car!");
     
 }
 
