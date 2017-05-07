@@ -10,7 +10,6 @@
 
 @interface InputHandler : NSObject
 
-//@property (nonatomic) NSString *responseValue;
-+(NSArray *)initiateUserInteraction;
++(NSString *)initiateUserInteraction;
 
 @end

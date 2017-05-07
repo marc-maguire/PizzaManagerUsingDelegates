@@ -91,9 +91,9 @@
 		6001EC82197B4EC300F97011 /* PizzaRestaurant */ = {
 			isa = PBXGroup;
 			children = (
+				6001EC83197B4EC300F97011 /* main.m */,
 				92FD60B31EBD179A00817FD0 /* InputHandler.h */,
 				92FD60B41EBD179A00817FD0 /* InputHandler.m */,
-				6001EC83197B4EC300F97011 /* main.m */,
 				92FD60CC1EBD3FE800817FD0 /* DeliveryService.h */,
 				92FD60CD1EBD3FE800817FD0 /* DeliveryService.m */,
 				92FD60CF1EBD3FF900817FD0 /* DeliveryCar.h */,

@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "Kitchen.h"
+#import "DeliveryService.h"
+#import "Manager.h"
 
-@interface CheeryManager : NSObject <KitchenDelegate>
+@interface CheeryManager : Manager <KitchenDelegate>
+
 
 @end

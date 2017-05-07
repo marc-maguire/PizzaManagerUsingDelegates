@@ -18,13 +18,15 @@
 - (BOOL)kitchenShouldUpgradeOrder:(Kitchen *)kitchen;
 
 @optional
+
 - (void)kitchenDidMakePizza:(Pizza *)pizza;
 
 @end
 
+
 @interface Kitchen : NSObject
 
-@property (nonatomic, weak) id <KitchenDelegate> delegate;
+@property (nonatomic, strong) id <KitchenDelegate> delegate;
 
 - (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings;
 
