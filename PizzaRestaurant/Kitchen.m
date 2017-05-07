@@ -16,6 +16,7 @@
 
 #import "Kitchen.h"
 #import "Pizza.h"
+#import "Manager.h"
 
 
 @implementation Kitchen
@@ -66,6 +67,13 @@
         return nil;
     }
     
+}
+-(id<KitchenDelegate>)delegate {
+    
+    if (!_delegate) {
+        _delegate = [[Manager alloc]init];
+    }
+    return _delegate;
 }
 
 - (BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(NSArray *)toppings {
