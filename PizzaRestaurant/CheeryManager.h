@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "Kitchen.h"
-#import "DeliveryService.h"
 #import "Manager.h"
 
 @interface CheeryManager : Manager <KitchenDelegate>

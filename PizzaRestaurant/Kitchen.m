@@ -15,7 +15,6 @@
 //Once the pizza has been made, send a kitchenDidMakePizza message to the delegate. Remember, kitchenDidMakePizza is optional; so, you'll have to check in code to see if, whoever the delegate is, actually implements this method. If the delegate does respond, send the message, otherwise don't. (HINT: use respondsToSelector:. Look it up in the Documentation).
 
 #import "Kitchen.h"
-#import "Pizza.h"
 #import "Manager.h"
 
 

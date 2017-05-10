@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Pizza.h"
-#include "DeliveryService.h"
+#import "DeliveryService.h"
+@class Pizza;
 
 @interface DeliveryCar : NSObject <PizzaDeliveryProtocol>
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Pizza.h"
+@class Pizza;
 
 @protocol PizzaDeliveryProtocol <NSObject>
 
