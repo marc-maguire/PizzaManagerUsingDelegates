@@ -40,6 +40,9 @@
     [self deliverPizza:pizza];
 }
 
+- (NSString *)welcomeMessage {
+    return @"I'm angry as hell";
+}
 //optional
 
 @end

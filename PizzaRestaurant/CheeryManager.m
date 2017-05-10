@@ -23,5 +23,8 @@
     
 }
 
+- (NSString *)welcomeMessage {
+    return @"yo man";
+}
 
 @end

@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "Pizza.h"
 @class Kitchen;
+//@class DeliveryService;
+#import "DeliveryService.h"
 
 @protocol KitchenDelegate <NSObject>
 
@@ -16,6 +18,9 @@
 
 - (BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(NSArray *)toppings;
 - (BOOL)kitchenShouldUpgradeOrder:(Kitchen *)kitchen;
+- (void)setDelegate:(id<PizzaDeliveryProtocol>)delegate;
+//@property (nonatomic,weak) id <PizzaDeliveryProtocol> delegate;
+- (NSString *)welcomeMessage;
 
 @optional
 
@@ -29,5 +34,6 @@
 @property (nonatomic, strong) id <KitchenDelegate> delegate;
 
 - (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings;
+
 
 @end

@@ -12,5 +12,5 @@
 
 @interface CheeryManager : Manager <KitchenDelegate>
 
-
+//- (NSString *)welcomeMessage;
 @end
